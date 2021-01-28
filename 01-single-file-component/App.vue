@@ -1,7 +1,7 @@
 <template>
 <div>
 <h1>Funfou</h1>
-<p>running with `vue serve`</p>
+<p>running with `vue serve` - instanting prototype</p>
 </div>
 </template>
 

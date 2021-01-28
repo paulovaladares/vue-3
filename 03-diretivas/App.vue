@@ -6,7 +6,7 @@
             <li
                 v-for="(task, index) in tasks" :key="`${task} - ${index}`"
             >
-                ({{ index+1 }}) {{ task.name }}
+                ({{ index + 1 }}) {{ task.name }}
             </li>
         </ul>
         <p v-else>A lista está escondida!</p>

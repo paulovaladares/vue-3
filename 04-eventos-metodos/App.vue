@@ -44,8 +44,8 @@ export default {
         currentTask: '',
         showList: false,
         tasks: [
-            {id: 1, name: 'fazer o curso', isDone: false},
-            {id: 2, name: 'Revisar o curso', isDone: false},
+            {id: Date.now(), name: 'fazer o curso', isDone: false},
+            {id: Date.now(), name: 'Revisar o curso', isDone: false},
         ]
     }),
     methods: {
@@ -66,7 +66,7 @@ export default {
         },
         addTask () {
             this.tasks.push({
-                id: Math.random() * 100,
+                id: Date.now(),
                 name: this.currentTask,
                 isDone: false,
             })
