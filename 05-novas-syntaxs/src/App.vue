@@ -29,6 +29,7 @@
         </button>
     </div>
 </template>
+
 <script>
 import { reactive } from 'vue'
 
@@ -48,8 +49,8 @@ export default {
             currentTask: '',
             showList: false,
             tasks: [
-                {id: 1, name: 'fazer o curso', isDone: false},
-                {id: 2, name: 'Revisar o curso', isDone: false},
+                {id: Date.now(), name: 'fazer o curso', isDone: false},
+                {id: Date.now(), name: 'Revisar o curso', isDone: false},
             ]
         })
         function remove (task) {
@@ -69,7 +70,7 @@ export default {
         }
         function addTask () {
             state.tasks.push({
-                id: Math.random() * 100,
+                id: Date.now(),
                 name: state.currentTask,
                 isDone: false,
             })
@@ -85,6 +86,7 @@ export default {
     }
 }
 </script>
+
 <style scoped>
 .line-through {
     text-decoration: line-through;
