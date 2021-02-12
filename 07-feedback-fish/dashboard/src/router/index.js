@@ -19,8 +19,8 @@ const routes = [
     }
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/credencials',
+    name: 'Credencials',
     component: Credencials,
     meta: {
       hasAuth: true

@@ -44,3 +44,4 @@ In this case, you should install the PostCSS 7 compatibility build instead.
 
 ### Install Animate.css
 See [Animate.css](https://animate.style/)
+
